@@ -8,7 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
     .name {
         text-transform: capitalize;
    
@@ -29,6 +30,29 @@
             margin: 5px;
             padding: 1px 8px 1px 8px;
         }
-    }
 
+        .POISON {
+            background-color: rgb(105, 19, 142);
+        }
+        
+        .GRASS {
+            background-color:  mediumaquamarine;
+        }
+        
+        .WATER {
+            background-color: rgb(0, 208, 255);
+        }
+
+        .FIRE {
+            background-color: rgb(255, 25, 0);
+        }
+        
+        .FLYING {
+            background-color: rgb(96, 96, 96);
+        }    
+
+        .BUG {
+            background-color: rgb(247, 45, 247);
+        }  
+    }
 }

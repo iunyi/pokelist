@@ -6,24 +6,22 @@ class PokeList extends Component {
     render() {
         const pokemonJSX = this.props.pokemon.map(item => {
             return (
-                    <li key={item.id} className="pokeList_item">
-                        <Pokemon 
-                            name={item.name}
-                            types={item.types}
-                            evolution={item.evolution}
-                            imgURL={item.url}
-                        />
-                    </li>
-
-
+                <li key={item.id} className="pokeList_item">
+                    <Pokemon 
+                        name={item.name}
+                        types={item.types}
+                        evolution={item.evolution}
+                        imgURL={item.url}
+                    />
+                </li>
             )
         })
         return (
-            <React.Fragment>
+            <div className="top">
                 <h1 className="h1">Pokedex</h1>
                 <ul className="pokeList">{pokemonJSX}</ul>
 
-            </React.Fragment>
+            </div>
         );
     }
 }

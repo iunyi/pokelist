@@ -1,3 +1,42 @@
 .App {
+    background-image: url('../images/wallpaper.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+    @media all and (max-height: 500px) {
+        background-color: rgb(206, 229, 251) repeat;
+    }
+
+    .top {
+        height: 70vh;
+    }
+       
+    .wild_pkm3 {
+        width: 100vw;
+        height: 20vh;
+        .psyduck_img {
+            position: absolute;
+            left: 0;
+            bottom: 5%;
+            height: 250px;
+            width: 250px;
+            transform: scaleX(-1);
+
+            @media all and (max-height: 650px) {
+                display: none;
+            }
+
+        }
+    }
+    
+}
+
+.hidden {
+    display: none;
 }

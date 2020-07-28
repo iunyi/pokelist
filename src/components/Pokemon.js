@@ -6,13 +6,13 @@ class Pokemon extends Component {
         const typesJSX = this.props.types.map((item,index) => {
             const upperCaseType = item.toUpperCase();
             return (
-                <li key={index} className="types_item">
+                <li key={index} className={`types_item ${upperCaseType}`}>
                     {upperCaseType}
                 </li>
             )
         })
 
-        return (
+        return (   
             <div className="card">
                 <img src={this.props.imgURL} alt={this.props.name} />
                 <h3 className="name">{this.props.name}</h3>
@@ -21,10 +21,5 @@ class Pokemon extends Component {
         );
     }
 }
-
-// // propTypes
-// h3.propTypes = {
-//     name: propTypes.
-// }
 
 export default Pokemon;
