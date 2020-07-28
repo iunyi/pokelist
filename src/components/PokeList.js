@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Pokemon from './Pokemon';
+import '../stylesheets/pokeList.scss';
 
 class PokeList extends Component {
     render() {
         const pokemonJSX = this.props.pokemon.map(item => {
             return (
-                    <li key={item.id}>
+                    <li key={item.id} className="pokeList_item">
                         <Pokemon 
                             name={item.name}
                             types={item.types}
@@ -19,8 +20,9 @@ class PokeList extends Component {
         })
         return (
             <React.Fragment>
-                <h1>Pokedex</h1>
-                <ul>{pokemonJSX}</ul>
+                <h1 className="h1">Pokedex</h1>
+                <ul className="pokeList">{pokemonJSX}</ul>
+
             </React.Fragment>
         );
     }
