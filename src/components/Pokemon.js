@@ -22,4 +22,10 @@ class Pokemon extends Component {
     }
 }
 
+Pokemon. propTypes = {
+    types: PropTypes.array,
+    imgURL: PropTypes.string,
+    name: PropTypes.string,
+}
+
 export default Pokemon;

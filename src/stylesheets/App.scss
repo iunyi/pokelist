@@ -9,10 +9,6 @@
     justify-content: space-between;
     align-items: center;
 
-    @media all and (max-height: 500px) {
-        background-color: rgb(206, 229, 251) repeat;
-    }
-
     .top {
         height: 70vh;
     }
@@ -20,6 +16,7 @@
     .wild_pkm3 {
         width: 100vw;
         height: 20vh;
+        
         .psyduck_img {
             position: absolute;
             left: 0;
@@ -31,10 +28,8 @@
             @media all and (max-height: 650px) {
                 display: none;
             }
-
         }
     }
-    
 }
 
 .hidden {

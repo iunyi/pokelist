@@ -12,7 +12,6 @@
 
     .name {
         text-transform: capitalize;
-   
         font-size: 24px;
     }
 
@@ -24,19 +23,18 @@
         .types_item {
             background-color: grey;
             color: white;
-       
             font-size: 14px;
             border-radius: 15px;
             margin: 5px;
-            padding: 1px 8px 1px 8px;
+            padding: 1px 8px 2px 8px;
         }
 
         .POISON {
-            background-color: rgb(105, 19, 142);
+            background-color: rgb(142, 19, 128);
         }
         
         .GRASS {
-            background-color:  mediumaquamarine;
+            background-color:  rgb(27, 196, 94);
         }
         
         .WATER {
@@ -44,15 +42,15 @@
         }
 
         .FIRE {
-            background-color: rgb(255, 25, 0);
+            background-color: rgb(254, 107, 16);
         }
         
         .FLYING {
-            background-color: rgb(96, 96, 96);
+            background-color: rgb(139, 147, 238);
         }    
 
         .BUG {
-            background-color: rgb(247, 45, 247);
+            background-color: rgb(179, 201, 32);
         }  
     }
 }
